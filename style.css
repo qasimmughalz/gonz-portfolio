@@ -1,0 +1,485 @@
+@font-face {
+    font-family: 'SF Pro Semibold';
+    src: url('./assets/fonts/SF-Pro-Text-Semibold.otf');
+}
+
+@font-face {
+    font-family: 'SF Pro Medium';
+    src: url('./assets/fonts/SF-Pro-Text-Medium.otf');
+}
+
+@font-face {
+    font-family: 'SF Pro Regular';
+    src: url('./assets/fonts/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+    font-family: 'SF Pro Bold';
+    src: url('./assets/fonts/SF-Pro-Text-Bold.otf');
+}
+
+@font-face {
+    font-family: 'SF Pro Light';
+    src: url('./assets/fonts/SF-Pro-Text-Light.otf');
+}
+
+/* ================================ GENERAL SETTINGS ============================== */
+:root {
+    --font-regular: 'SF Pro Regular';
+    --font-light: 'SF Pro Light';
+    --font-med: 'SF Pro Medium';
+    --font-semi-b: 'SF Pro Semibold';
+    --font-bold: 'SF Pro Bold';
+    --black: #141414;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #EBEAE6 0% 0% no-repeat padding-box;
+    font-family: 'SF Pro Regular';
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 901px;
+    width: 100%;
+}
+
+/* ================================ NAVBAR  ============================== */
+
+
+.navbar-container {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container h3 {
+    color: var(--black);
+    font-size: 22px;
+    font-family: var(--font-semi-b)
+}
+
+.navbar .navbar-container .nav-links-container {
+    display: flex;
+    gap: 19px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-container .nav-links-container .nav-link {
+    font-family: var(--font-med);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .container{
+        padding: 20px;
+    }
+    .navbar-container {
+        margin-top: 32px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+
+
+
+
+
+/* ================================ Who I AM   ============================== */
+
+.who-i-am {
+    width: 100%;
+    margin: 175px auto 55px auto;
+}
+
+.who-i-am span {
+    color: #8266F0;
+    text-transform: uppercase;
+    font-family: var(--font-semi-b);
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+.who-i-am h1 {
+    margin-top: 35px;
+    color: var(--black);
+    font-family: var(--font-semi-b);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.who-i-am p {
+    font-family: var(--font-light);
+    font-size: 27px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .who-i-am {
+        margin-top: 100px
+    }
+
+}
+
+/* ================================ Let-s Chat Box   ============================== */
+
+.lets-chat-box {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E5E5E5 0% 0% no-repeat padding-box;
+    border: 1px solid #1414144D;
+    max-width: 585px;
+    width: 100%;
+    height: 131px;
+    gap: 10px;
+    border-radius: 14px;
+    padding: 15px 41px 22px 42px;
+}
+
+.lets-chat-box .lets-chat-box-content h3 {
+    color: #8266F0;
+    font-family: var(--font-semi-b);
+}
+
+.lets-chat-box .lets-chat-box-content p {
+    margin-top: 8px;
+    font-family: var(--font-regular);
+}
+
+.lets-chat .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.lets-chat .icons .icon-box {
+    height: 67px;
+    width: 67px;
+}
+
+.lets-chat .icons .icon-box img {
+    padding: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .lets-chat-box {
+        padding: 15px 20px 22px 20px;
+    }
+}
+
+/* ================================ Message Box   ============================== */
+
+.msg-box {
+    max-width: 829px;
+    width: 100%;
+    color: #Fff;
+    background: #00000042 0% 0% no-repeat padding-box;
+    border-radius: 19px;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    gap: 19px;
+    align-items: center;
+    padding: 14px;
+    margin: 55px auto 0px auto;
+    backdrop-filter: blur(50px);
+}
+
+.msg-box>div:first-child {
+    width: 59px;
+    height: 15px;
+    color: #4D4D4D;
+    font-size: 13px;
+    position: absolute;
+    top: 18px;
+    /* background: #00000042 0% 0% no-repeat padding-box; */
+    /* backdrop-filter: blur(50px); */
+    right: 43px;
+}
+
+.msg-box-content h3 {
+    font-size: 21px;
+    font-family: var(--font-semi-b);
+}
+
+.msg-box-content p {
+    margin-top: 3px;
+    font-size: 21px;
+    font-family: var(--font-regular);
+}
+
+
+@media only screen and (max-width: 900px) {
+    .msg-box{
+        gap: 8px;
+    }
+    .msg-box-content h3 , .msg-box-content p{
+        font-size: 17px;
+    }
+}
+
+
+/* ======================== IOS APPS =============================== */
+
+.ios-apps {
+    margin: 180px auto;
+}
+
+.ios-apps h2 {
+    font-size: 33px;
+    font-family: var(--font-semi-b);
+    color: #171717;
+}
+
+.ios-apps-list {
+    margin-top: 63px;
+}
+
+.ios-apps-list .list-item {
+    max-width: 698px;
+    gap: 7px;
+    width: 100%;
+    margin: 30px auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ios-apps-list .list-item .inner-flex{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.ios-apps-list .list-item .ios-apps-image-box{
+    height: 58px;
+    width: 58px;
+}
+
+.ios-apps-list .list-item .ios-apps-image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.ios-apps-list .grey-line {
+   
+    width: 68%;
+    margin:30px auto;
+    background-color: #00000015;
+}
+
+
+.ios-apps-content-box h3 {
+    font-size: 18px;
+    color: #171717;
+    font-family: var(--font-med);
+}
+
+.ios-apps-content-box p {
+    font-family: var(--font-light);
+    color: #171717;
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+.ios-apps-btn-box button {
+    color: #fff;
+    font-size: 17px;
+    font-family: var(--font-med);
+    border: 0px;
+    width: 89px;
+    height: 38px;
+    background: #A4A4A1 0% 0% no-repeat padding-box;
+    border-radius: 19px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .ios-apps {
+        margin: 90px auto;
+    }
+    .ios-apps-list .list-item .inner-flex{
+        flex-wrap: wrap;
+    }
+    .ios-apps-list .list-item {
+        align-items: flex-end;
+    }
+}
+
+
+
+/* ======================== CASE STUDIES  =============================== */
+
+.case-studies{
+    margin-bottom: 170px;
+}
+
+.case-studies h3{
+    font-size: 33px;
+    font-family: var(--font-semi-b);
+}
+
+.case-studies .images-container{
+    margin-top: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.case-studies .image-box{
+    height: 464px;
+    max-width: 419px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.case-studies .image-box img{
+    height: 100%;
+    width: 100%;
+    transition: 2s ease-in-out;
+    object-fit: cover;
+}
+
+.case-studies .image-box img:hover{
+    transform: scale(1.1);
+}
+
+.case-studies .image-box-full{
+    max-width: 901;
+    width: 100%;
+    height: 464px;
+    margin-top: 62px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.case-studies .image-box-full img{
+    width: 100%;
+    transition: 2s ease-in-out;
+    height: 100%;
+    object-fit: cover;
+}
+.case-studies .image-box-full img:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width: 399px) {
+    .case-studies .image-box , .case-studies .image-box-full{
+        height: 160px;
+    }
+}
+
+
+@media only screen and (min-width: 400px) {
+    .case-studies .image-box , .case-studies .image-box-full{
+        height: 190px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .case-studies .image-box, .case-studies .image-box-full{
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .case-studies .image-box, .case-studies .image-box-full{
+        height: 464px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .case-studies .image-box-full{
+        margin-top: 32px;
+    }
+}
+
+
+
+
+/* ======================== Footer  =============================== */
+
+
+.footer-line{
+    margin: auto;
+    max-width: 1415px;
+    background-color: #707070;
+}
+
+footer{
+    margin-top: 64px;
+    text-align: center;
+}
+.footer-content h3{
+    font-family: var(--font-semi-b);
+    font-size: 26px;
+}
+.footer-content .footer-nav{
+    margin-top:21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer-content .footer-nav .a{
+    font-family: var(--font-med);
+    color: #141414;
+}
+
+footer .footer-cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+footer .footer-cta h5{
+    color: #141414;
+    font-size: 17px;
+    font-family: var(--font-semi-b);
+}
+
+footer .footer-cta h5 span{
+   color: #2AD139;
+}
